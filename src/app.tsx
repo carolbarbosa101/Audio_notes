@@ -1,10 +1,24 @@
 import React from "react";
+import logo from './assets/logo.svg';
 
 export function App() { // componentes funções em que a primeira letra é maiscula, que devolvem HTML
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="mx-auto max-w-6xl my-12 space-y-6"> 
+    <img src={logo} alt="logo carol"/>
+    
+    <form className="w-full">
+      <input
+      type="text"
+      placeholder="Busque as suas notas"
+      className="w-full bg-transparent text-3xl font-semibold tracking-tight outline-none placeholder: text-slate-500"
+      />
+    </form>
+    <div className="h-px bg-slate-700" />
+
+    <div >
+
+    </div>
+    </div>
   ) // a partir do momento que o html é utilizado dentro do tsx ele se torna JSX e não mais HTML
   } // é só uma representação de html 
 
