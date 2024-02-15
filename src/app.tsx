@@ -4,10 +4,7 @@ import logo from './assets/logo.svg';
 import { NoteCard } from "./components/note-card";
 import { NewCard } from "./components/new-card";
 
-const note = {
-  date: new Date(),
-  content: "Hello World"
-}
+
 
 export function App() { // componentes funções em que a primeira letra é maiscula, que devolvem HTML
   return (
@@ -27,11 +24,11 @@ export function App() { // componentes funções em que a primeira letra é mais
       <div className="grid grid-cols-3 gap-6 auto-rows-[250px]">
        
         <NewCard />
-        <NoteCard note={note} />
-        <NoteCard note={note} />
-        <NoteCard note={note} />
-        <NoteCard note={note} />
-        <NoteCard note={note} />
+        <NoteCard note={{
+            date: new Date(),
+            content: "Hello World"
+        }} />
+
 
       </div>
     </div>
